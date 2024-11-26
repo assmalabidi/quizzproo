@@ -16,26 +16,25 @@ import java.util.Date;
 @Table(name = "responsablerh")
 public class responsablerh implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment primary key
+	 @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+  
     private String nom;
 
-    @Column(nullable = false)
+
     private String prenom;
-    
-    @Column(nullable = false, unique = true)
+
     private String email;
     
-    @Column(nullable = false)
+ 
     private String password;
 
-    @Column(nullable = false)
+
     private String num;
 
-    @Column(nullable = false)
+   
     private String adresse;
     
     @Temporal(TemporalType.DATE)

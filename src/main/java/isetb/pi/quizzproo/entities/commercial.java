@@ -20,22 +20,22 @@ public class commercial implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment primary key
     private Long id;
 
-    @Column(nullable = false)
+   
     private String nom;
 
-    @Column(nullable = false)
+ 
     private String prenom;
 
-    @Column(nullable = false, unique = true)
+    
     private String email;
     
-    @Column(nullable = false)
+   
     private String password;
 
-    @Column(nullable = false)
+    
     private String num;
 
-    @Column(nullable = false)
+    
     private String adresse;
     
     
