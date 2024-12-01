@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between the table and form */
+  max-width: 1200px;
+  background: #fff;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Section */
+/* Main Title Styling */
+.table-container h1 {
+  font-size: 28px; /* Adjust the font size as needed */
+  font-weight: 500;
+  color: #333; /* Change the color to a dark shade */
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center; /* Optional: Center the title */
+  margin-bottom: 20px; /* Optional: Add some space below the title */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px; /* Smaller font size */
+}
+table th, table td {
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ddd;
+}
+table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #555;
+}
+table td {
+  background-color: #fff;
+}
+
+/* Form Section */
+.form-container {
+  width: 30%; /* Form occupies 35% width */
+  margin-left: 20px; /* Distance between table and form */
+}
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the form header */
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-row {
+  margin-bottom: 20px;
+}
+.input-data {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-data input, .input-data select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  padding-left: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.input-data input:focus, .input-data select:focus {
+  border-bottom: 2px solid #3498db;
+}
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.input-data input:focus ~ label, .input-data input:valid ~ label,
+.input-data select:focus ~ label, .input-data select:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+
+/* Button Styling */
+.form-row .submit-btn {
+  text-align: center;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Icon Button Styles */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px; /* Less padding */
+}
+.edit-button i {
+  color: #3498db;
+}
+.delete-button i {
+  color: #e74c3c;
+}
+.icon-button:hover {
+  color: #e74c3c;
+}
+
